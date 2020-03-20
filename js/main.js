@@ -8,13 +8,10 @@ fetch('https://danepubliczne.imgw.pl/api/data/synop')
                 let cityName = document.createElement('p');
                 let temp = document.createElement('p');
 
-
-                
-    
                 cityName.innerText ='Miasto : ' + elem.stacja;
                 temp.innerText = 'Temperatura : ' + elem.temperatura + ' °C';
 
-                if(elem.temperatura > 10){
+                if(elem.temperatura >= 10){
                     temp.classList.add('hot')
 
                 }else{
@@ -24,18 +21,8 @@ fetch('https://danepubliczne.imgw.pl/api/data/synop')
                 containerInner.appendChild(cityName)
                 containerInner.appendChild(temp)
                 document.getElementById('container').appendChild(containerInner)
-    
-                
             });
-
-
-
-
-
-
-
-
-        })
+ })
 
 
 
