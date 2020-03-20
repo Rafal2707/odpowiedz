@@ -1,0 +1,20 @@
+#container div{
+    margin-bottom: 20px;
+    border: 2px solid black;
+    width: 20%;
+}
+
+#container p{
+    margin: 10px;
+}
+
+.hot {
+    color: red;
+}
+
+.cold{
+    color: blue;
+} 
+
+
+    
